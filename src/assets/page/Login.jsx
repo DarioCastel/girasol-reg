@@ -1,4 +1,5 @@
 import React from "react";
+import Table from "../components/Table";
 import "./../css/login.scss";
 import Avatar from "./../Img/avatar.jpg";
 
@@ -25,6 +26,7 @@ const Login = () => {
           </form>
         </div>
       </div>
+      <Table/>
     </>
   );
 };
