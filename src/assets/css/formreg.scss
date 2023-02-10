@@ -1,0 +1,102 @@
+.form-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 1em;
+    color: #2f2f2f;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+.form-header::before{
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    height: 3px;
+    width: 150px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden;
+}
+.form-body{
+    margin: 0 auto 16px;
+    border-radius: 5px;
+    background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+    padding: 4px;
+    max-height: calc(89% - .8rem);
+    margin: .8rem auto;
+    overflow: auto;
+    width: 70%;
+    height: 100vh;
+}
+.form-body form{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #161616;
+    background: #fff;
+    padding: 25px 30px;
+}
+
+.form-body .reg-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    border: 2px solid #d5d8dc;
+    border-radius: 4px;
+    padding: 30px 50px;
+    margin: 20px 0;
+}
+.form-body .reg-details:nth-child(1){
+    margin: 0;
+}
+
+.form-body .reg-details .input-box input{
+    height: 45px;
+    width: 110%;
+    padding: 10px;
+    margin-top: 10px;
+   
+}
+.form-body .reg-details .input-box .details{
+    font-weight: 600;
+    margin:20px;
+    color: #2f2f2f;
+    text-transform:uppercase ;
+}
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+}
+.foto{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #157ae1;
+}
+.submit{
+    height: 45px;
+    width: 100%;
+    border-radius: 4px;
+}
+.submit input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    cursor: pointer;
+    transition: .5s all ease;
+}
+.submit:hover input{
+    background: linear-gradient(180deg, #71b7e6, #9b59b6);
+}

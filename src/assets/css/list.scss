@@ -1,0 +1,69 @@
+.content-dash{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-top: 1em;
+   gap: 1em;
+   width: 82vw;
+   height: 90vh;
+   background-color: #fff5;
+   backdrop-filter: blur(7px);
+   border-radius: 10px;
+   box-shadow: 0 .4rem .8rem #0005;
+   overflow: hidden;
+}
+.container-dash .table-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 1em;
+    color: #2f2f2f;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+.container-dash .table-body{
+    margin: 0 auto 16px;
+    border-radius: 5px;
+    background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+    padding: 4px;
+    max-height: calc(89% - .8rem);
+    margin: .8rem auto;
+    overflow: auto;
+    width: 80%;
+}
+.container-dash .table-body::-webkit-scrollbar{
+    width: .5rem;
+    height: .5rem;
+}
+.container-dash .table-body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.container-dash .table-body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.container-dash .table-body table{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #161616;
+    background: #fff;
+}
+
+.container-dash .table-body table, th ,td{
+    padding: 1em;
+    
+}
+.container-dash .table-body thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #9dc6ee;
+}
+.container-dash .table-body tbody tr:nth-child(even){
+    background: #6e6e6e21;
+}

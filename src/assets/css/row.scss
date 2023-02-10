@@ -1,0 +1,25 @@
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+}
+.action .icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: #abebc6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #1e8449 ;
+    cursor: pointer;
+}
+.action .icon:hover{
+    color: #566573;
+}
+.action .icon:nth-child(2){
+    background: #aed6f1;
+    color:  #2874a6 ;
+}

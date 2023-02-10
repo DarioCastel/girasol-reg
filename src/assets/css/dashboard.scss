@@ -1,0 +1,54 @@
+.container-dash{
+    display: grid;
+    grid-template:
+    " . head . " 150px
+    " . content . " 1fr;
+    min-height: 100vh;
+    gap: 5px;
+    background-image: url('./../img/home.svg');
+    background-size: 1000px 400px;
+    background-position: -300px 0;
+}
+.header{
+    grid-area: head;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.header button{
+    position: relative;
+    padding: 30px 40px;
+    font-size: 1.05em;
+    border-radius: 40px;
+    background: #2f2f2f;
+    color: #bbb;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 2em;
+    transition: .5s all ease;
+    overflow: hidden;
+}
+.header button:hover{
+    color: #fff;
+}
+.header button:hover span{
+    position: absolute;
+    border: 2px solid #157ae1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 550px;
+        height: 550px;
+    }
+}

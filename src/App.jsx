@@ -1,10 +1,15 @@
-import Home from "./assets/page/Home"
-import Login from "./assets/page/Login"
+import { useState } from 'react'
+import Dashboard from './assets/Page/Dashboard'
+import Login from './assets/Page/Login'
+import reactLogo from './assets/react.svg'
+
 
 function App() {
+  
+
   return (
     <div className="App">
-      <Home/>
+     <Dashboard/>
     </div>
   )
 }
